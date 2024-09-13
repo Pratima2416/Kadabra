@@ -1,0 +1,146 @@
+.register-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.registration-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
+
+.registration-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.registration-form p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.register-input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.register-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.register-input-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.register-input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.register-checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.register-checkbox-group label {
+    font-size: 14px;
+    color: #555555;
+}
+
+.register-checkbox-group a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.register-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added this to ensure vertical alignment */
+    margin-top: 20px; /* Space above the button */
+}
+
+button {
+    padding: 12px;
+    background-color: #001b61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 100%;
+    /* margin-top: 10px; */
+    /* margin: 0 auto; 
+    display: block;
+    width: 100%; 
+    max-width: 450px; */
+}
+
+button:hover {
+    background-color: #0047ab;
+}
+
+.register-login-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-login-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-login-text a:hover {
+    text-decoration: underline;
+}
+
+.image-side {
+    margin-right: 40px;
+}
+
+.image-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

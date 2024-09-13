@@ -1,0 +1,895 @@
+.travel-gateway-body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.full-width-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.travel-label {
+  display: flex;
+  gap: 20px;
+}
+
+.travel-label a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.travel-label a:hover {
+  background-color: #e2e6ea;
+}
+
+.travel-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.travel-explorer-btn,
+.travel-login-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 50;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.travel-explorer-btn {
+  background-color: #001b61;
+  color: white;
+  white-space: nowrap;
+}
+
+.travel-explorer-btn:hover {
+  background-color: #0056b3;
+}
+
+.travel-login-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.travel-login-btn:hover {
+  background-color: #5a6268;
+}
+
+.destination-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.destination-link:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Blue heading section */
+.blue-heading-container {
+  background-color: white; 
+  padding: 20px;
+  text-align: center;
+  margin: 60px auto 0px; 
+}
+
+.blue-heading {
+  color: #001b61; 
+  font-size: 20px;
+  margin: 0;
+}
+
+/* blue container */
+.budget-planner-container {
+  background-color: #e1e6f6; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; 
+  margin: 0px auto; 
+  text-align: center; 
+}
+
+/* New Content Container */
+.new-content-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+}
+
+/* White Containers */
+.white-container {
+  background-color: white;
+  border: 1px solid #ddd; 
+  padding: 20px;
+  flex: 1; 
+  border-radius: 15px;
+}
+
+.range-slider-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+/* Style for the range values */
+.range-values {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-value {
+  position: absolute;
+  bottom: -20px;
+  background-color: grey;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.min-value {
+  left: 0;
+}
+
+.max-value {
+  right: 0;
+}
+
+/* Style for slider thumb */
+.price-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: grey;
+  cursor: pointer;
+}
+
+.price-range-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: grey;
+  cursor: pointer;
+}
+
+.price-range-slider{
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+}
+
+.starting-at-heading {
+  text-align: left; 
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+  font-weight: bold; 
+  margin: 5px; 
+  padding: 10px 0; 
+  color: #333;
+  margin-top: 18px;
+}
+
+/* .left-container {
+  
+}
+
+.right-container {
+
+} */
+
+.location-search-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex; 
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; 
+  color: white; 
+  display: flex;
+  align-items: center;
+}
+
+.search-icon img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
+
+.location-search-input {
+  width: 100%;
+  padding: 10px 0px 10px 40px; /* Padding adjusted for the icon */
+  border: 1px solid grey; /* Grey border for the input */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white; /* Ensure input background is white */
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.location-search-input::placeholder {
+  color: #888; /* Grey placeholder text */
+}
+
+.trip-buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  width: 100;
+  border-radius: 15px;
+}
+
+.trip-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.trip-btn.active {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.trip-btn:not(.active):hover {
+  background-color: #e0e0e0;
+}
+
+.next-step-container {
+  display: flex;
+  align-self: flex-start;
+}
+
+.Next-step {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  /* align-self:flex-start; */
+  width: 30%;
+  /* display:flex; */
+}
+
+.heading {
+  color: #000; 
+  font-size: 28px;
+  margin-bottom: 10px; 
+}
+
+.subheading {
+  color: #616161; 
+  font-size: 16px;
+  font-weight: 30;
+  margin: 0;
+}
+
+.blue-subheading {
+  margin-top: 200px;
+  font-weight: 60;
+  color: #0056b3;
+}
+
+.blue-paragraph-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blue-paragraph {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.get-started-btn {
+  margin-top: 20px;
+  width: 160px;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #001b61;
+  background-color: white;
+  border:#001b61;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow:#000;
+}
+
+.get-started-btn:hover {
+  background-color: #c9cacc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+/* Testimonials Section */
+.travel-testimonials {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.travel-testimonials-container {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  width: 80%;
+}
+
+.travel-testimonials h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.author-name {
+  position: absolute;
+  bottom: 20px;
+  display: block; 
+  text-align: left;
+  margin-top: 10px;
+}
+
+.testimonial-text {
+  margin-bottom: 30px;
+}
+
+.travel-testimonials-cards {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease; 
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.travel-testimonial-card {
+  flex: 1 0 100px;
+  max-width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px; 
+}
+
+.testimonial-arrow {
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  z-index: 1;
+  position: absolute;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  background: none; 
+  border: none; 
+  font-size: 24px; 
+  color: #454242; 
+  cursor: pointer;
+  padding: 0; 
+  max-width: 2px;
+  margin: 10px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  color: black; 
+  background: none;
+}
+
+.left-arrow {
+  left: 0;
+  position: absolute;
+  transform: translateX(-49%);
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 10px;
+  position: absolute;
+  transform: translateX(49%);
+  cursor: pointer;
+  background: none;
+}
+
+.travel-testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.travel-testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.travel-inspiration-heading {
+  margin: 20px 0px; 
+  display: flex;
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  width: 80%;
+  margin-left: 5px;
+  margin-top: 0px;
+  padding-bottom: 8px;
+}
+
+/* Packages Section */
+.travel-packages {
+  padding: 20px 30px;
+}
+
+.clickable-destination {
+  cursor: pointer; 
+  padding: 10px;
+  margin: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.clickable-destination:hover {
+  background-color: #f0f0f0; 
+}
+
+.travel-destinations-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
+.travel-destinations-list li {
+  /* list-style: none; */
+  font-size: 0.9rem;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 17px;
+}
+
+.travel-destinations-list li.active {
+  color: black;
+  text-decoration: underline;
+  /* font-weight: bold; */
+}
+
+.travel-destinations-list li:hover {
+  color: black;
+}
+
+.travel-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 100%;
+  gap: 20px;
+}
+
+.travel-destinations-grid span {
+  display: block;
+  padding: 2px; 
+  text-align: center; 
+  font-size: 15px;
+}
+
+.destination-city {
+  color: #000; 
+  display: block; 
+  
+}
+
+.destination-country {
+  color: #888; 
+  display: block;
+  white-space: nowrap;
+  
+}
+
+.travel-see-more a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+}
+
+/* Footer Styling */
+.travel-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #f8f9fa;
+}
+
+.travel-footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.travel-footer a:hover {
+  color: black;
+}
+
+.travel-footer div {
+  flex: 1;
+}
+
+.travel-footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.travel-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.travel-footer ul li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Style for the calendars container */
+.calendars-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 20px; 
+  flex-direction: column;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline:rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.next-step-container2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Next-step2 {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  width: 100%;
+  width: 100px;
+}
+
+.round-trip-date, .end-trip-date  {
+  font-size: 18px; 
+  color: #989595; 
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.date-display-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calendars-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the text and calendar */
+  max-width: 400px;
+  margin: 20px;
+}
+
+.travelers-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px auto;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.travelers-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.traveler-input {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+}
+
+.traveler-input label {
+  flex-shrink: 0; /* Prevent label from shrinking */
+}
+
+.number-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between buttons and input */
+}
+
+.number-input-container button {
+  background-color: #001b61;
+  border: 1px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.number-input-container input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.number-input-container button:hover {
+  background-color: #ddd;
+}
+
+.age-info {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 10px; 
+}
+
+.crew-recommendation-text {
+  color: grey;
+  font-size: 14px; 
+  margin-top: 5px; 
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+
+.Locations{
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+}
+
+.Near-location{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.selection-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 60px;
+}
+
+.selection-button {
+  padding: 10px 20px;
+  border: 1px solid rgb(236, 234, 234);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+  text-align: center;
+  flex: 0 1 45%;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.selection-button:hover,
+.selection-button.selected{
+  color: white;
+  background-color: #001b61;
+}
+
+.selection-button:focus {
+  outline: none;
+}
+
+.Generate {
+  width: 10px 50px;
+  padding: 10px 20px;
+  background-color: #001b61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.Generate:hover{
+  background-color: #001b61;
+}
+
+.When-to-go{
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 60px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0;
+}
+
+.text-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.text-arrow {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+}
+
+.text-content {
+  flex-grow: 1;
+}
+
+.text-arrow div {
+  flex-grow: 1; /* Makes the text container take up available space */
+}
+
+.main-text {
+  margin: 10px; 
+  padding: 0;
+  text-align: left;
+}
+
+.save-text {
+  display: block; 
+  color: blue; 
+  font-size: 0.9em;
+  text-align: left;
+  margin: 10px;
+}
+
+.arrow {
+  font-size: 30px;
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.when-to-go {
+  padding: 20px;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.results{
+  font-size: 30px;
+  font-weight: 100;
+}

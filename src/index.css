@@ -1,13 +1,229 @@
+/* General Styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container Styles */
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.login-wrapper {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+/* Login Form Styles */
+.login-form {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Title Styles */
+.title {
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
+
+/* Welcome Text */
+.welcome-text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #001b61;
+    font-weight: 800;
+}
+
+/* Input Group Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Toggle Password Icon */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Remember Me and Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.remember-forgot a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button Styles */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #001b61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.login-btn:hover {
+    background-color: #0047ab;
+}
+
+/* Signup Text Styles */
+.signup-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Login Styles */
+.social-login {
+    color: #aaaaaa;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or-text {
+    color: #aaaaaa;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.or-text::before,
+.or-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+
+.or-text::before {
+    left: -60px;
+}
+
+.or-text::after {
+    right: -60px;
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 0.4px solid #aaaaaa;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-icons img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Image Side */
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Ensure the image doesn't exceed the container height */
+.image-side img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Error Text */
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+    }
+
+    .image-side {
+        display: none; /* Hide image on smaller screens */
+    }
+
+    .login-form {
+        padding: 20px;
+    }
 }
